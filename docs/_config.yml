@@ -9,3 +9,6 @@ keywords:    "CAMH, research, computing, scientific computing, workshop"
 description: "A 6 day long series of self-paced computing skills fundamentals workshops for CAMH researchers"
 root:        "http://hmofet.github.io/scwg"
 sources_link: "http://hmofet.github.io/scwg"
+collections: 
+    - courses
+    
