@@ -1,43 +1,63 @@
 <html>
 
 <head>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.css' />
-<script src='js/jquery.min.js'></script>
-<script src='js/moment.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.js'></script>
+
+	 <!--Import Google Icon Font for materialize-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-<script>
-	$(document).ready(function() {
-		
-		$('#calendar').fullCalendar({
-			header: {
-				left: '',
-				center: 'title',
-				right: 'agendaWeek,agendaDay'
-			},
-			defaultDate: '2014-06-12',
-			defaultView: 'agendaWeek',
-			editable: false,
-			events: [
-				{
-					title: 'All Day Event',
-					start: '2014-06-12'
+	<!--fullcalendar.io-->	
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.css' />
+	<script src='js/jquery.min.js'></script>
+	<script src='js/moment.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.js'></script>
+
+	<!--materializecss -->
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+
+	<script>
+		$(document).ready(function() {
+			
+			$('#calendar').fullCalendar({
+				header: {
+					left: '',
+					center: 'title',
+					right: 'agendaWeek,agendaDay'
 				},
-				{
-					title: 'Click for Google',
-					url: 'http://google.com/',
-					start: '2014-06-11'
-				}
-			]
+				defaultDate: '2017-09-26',
+				defaultView: 'agendaWeek',
+				editable: false,
+				events: '/json/calendar-feed.json'
+				
+			});
+			
 		});
-		
-	});
-</script>
+	</script>
 
 </head>
+<body>
+  
+	<ul id="slide-out" class="side-nav fixed">
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <div style="margin-left: 320px">
+		<div>
+			<h1>Scientific Computing Fundamentals for CAMH Researchers</h1>
+			<h1>Sep 25th - Oct 6th, 2017</h1>
+		</div>
+		<div id='calendar' style="width: 700px; height:200px;"></div>
+	</div>
 
-
-<div id='calendar'></div>
-
-</head>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>
