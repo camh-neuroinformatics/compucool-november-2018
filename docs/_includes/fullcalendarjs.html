@@ -14,7 +14,7 @@
 			defaultView: 'agendaWeek',
 			editable: false,
 			scrollTime: '08:00:00',
-			events: '{{site.root}}/json/calendar-feed.json'
+			events: '{{ "/json/calendar-feed.json" | relative_url }}'
 			
 		});
 		
