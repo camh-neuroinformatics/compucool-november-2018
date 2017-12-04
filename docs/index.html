@@ -25,7 +25,7 @@
 			
 			$('#calendar').fullCalendar({
 				header: {
-					left: '',
+					left: 'prev,next today',
 					center: 'title',
 					right: 'agendaWeek,agendaDay'
 				},
@@ -40,21 +40,23 @@
 	</script>
 
 </head>
-<body>
+<body">
   
-	<ul id="slide-out" class="side-nav fixed">
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+	<ul id="slide-out" class="side-nav fixed deep-purple lighten-2 white-text">
+        <div class="deep-purple center"><li>Scientific Computing Working Group</li></div>
+        <li><a class="subheader">Menu</a></li>
+        <li><a class="waves-effect" href="#!">First Link</a></li>
     </ul>
-    <div style="margin-left: 320px">
-		<div>
-			<h1>Scientific Computing Fundamentals for CAMH Researchers</h1>
-			<h1>Sep 25th - Oct 6th, 2017</h1>
+    <div style="margin-left: 320px; margin-right: 20px">
+		<div class="center">
+			<div class="card deep-purple white-text">
+				<h3>Scientific Computing Fundamentals for CAMH Researchers</h3>
+				<h5>Sep 25th - Oct 6th, 2017</h5>
+			</div>
+		
+			<h3>Calendar of Events</h3>
+			<div id='calendar' style="width: 700px; height:200px; margin-left: 120px;"></div>
 		</div>
-		<div id='calendar' style="width: 700px; height:200px;"></div>
 	</div>
 
 	<!-- Compiled and minified JavaScript -->
