@@ -50,60 +50,7 @@ layout: default
 
 
 <ul class="collapsible" data-collapsible="accordion">
-	{% for course in site.courses %}
-		<li>
-		 	<div class="collapsible-header"><a name="{{ course.event-link }}">{{ course.title }} - {{ course.time }}, {{ course.room }}</a></div>
-			<div class="collapsible-body left-align">
-				<span>
-					<strong>Instructor:</strong> {{ course.instructor }} <br>
-					{% if course.helper != "" %}<strong>Helper(s): {{ course.helper }} </strong><br> {% endif %}
-
-					<strong>Description:</strong> {{ content }} <br>
-
-					<strong>You'll learn:</strong><br>
-					 {{ course.learn}}
-
-					<strong>Prerequisites:</strong> {{ course.prerequisites }}<br>
-
-					<strong>You'll need:</strong> {{ course.requirements }}
-				</span>
-			</div>
-		</li>
-{% endfor %}
+	{% for course in site.courses_26th %}
+		{{ course }}
+	{% endfor %}
 </ul>
-
-<!--<div class="row">
-	<div class="col s6">
-		<ul class="collapsible" data-collapsible="accordion">
-	    	<li>
-	      		<div class="collapsible-header"><i class="material-icons">filter_drama</i>First left column</div>
-	      		<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-	    	</li>
-    		<li>
-	      		<div class="collapsible-header"><i class="material-icons">place</i>Second left column</div>
-	      		<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-	    	</li>
-	   		 <li>
-			      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third left column</div>
-			      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-	   		 </li>
-	 	</ul>
-	 </div>
-
-	 <div class="col s6">
-		<ul class="collapsible" data-collapsible="accordion">
-	    	<li>
-	      		<div class="collapsible-header"><i class="material-icons">filter_drama</i>First right column</div>
-	      		<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-	    	</li>
-    		<li>
-	      		<div class="collapsible-header"><i class="material-icons">place</i>Second right column</div>
-	      		<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-	    	</li>
-	   		 <li>
-			      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third right column</div>
-			      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-	   		 </li>
-	 	</ul>
-	 </div>
-</div> -->
