@@ -20,7 +20,7 @@
 - one collection per day courses are taught
 - each folder for a collection must contain course files, named in the following pattern (0-indexed): 00-name-of-course.html
 - course folder should be named \_course_3rd. That is, underscore, course, date of course (this is just a convention, doesn't really matter as long as \_config.yml has the correct name for the matching folder)
-- numbering of files is important, and should follow chronological order (ascending order from earliest to last),  and match the json feed index numbering. This way collapsibles will be rendered in the correct order, and clicking on events in the calendar will expand the right collapsible.
+~~- numbering of files is important, and should follow chronological order (ascending order from earliest to last),  and match the json feed index numbering. This way collapsibles will be rendered in the correct order, and clicking on events in the calendar will expand the right collapsible.~~ Start date included in file is important, determines ordering and collapsibles being expanded correctly by clicking in the calendar
 - numbering between days _should be continuous between folders_. For example, if you had a \_courses_27th and \_courses_28th, and the last file of \_courses_27th was 17-my-awesome-course.html, the first file of courses_28th should be 18-another-spectacular-course.html
 - add new collections (days courses are taught on) into \_config.yml
 - omit "helper" if there is no helper, and the page will automatically render without that field
