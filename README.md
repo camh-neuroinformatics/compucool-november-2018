@@ -26,8 +26,8 @@
 - omit "helper" if there is no helper, and the page will automatically render without that field
 
 ## Calendar JSON feed:
-~~json file, just follow the example
-- id number is important: 0-indexed course IDs should be chronologically ordered, and match the order you want the courses to appear on the index page
-- unlike course file names, __do not__ use leading zero on index numbers
-- if id number is not correct or out of order, clicking on an event in the calendar will not expand the correct collapsible~~
+~~json file, just follow the example~~
+~~- id number is important: 0-indexed course IDs should be chronologically ordered, and match the order you want the courses to appear on the index page~~
+~~- unlike course file names, __do not__ use leading zero on index numbers~~
+~~- if id number is not correct or out of order, clicking on an event in the calendar will not expand the correct collapsible~~
 - now just generated automatically through the magic of Liquid and Jekyll :D
