@@ -1,6 +1,10 @@
+
 <script>
+
+
 	$(document).ready(function() {
-		
+
+
 		$('#calendar').fullCalendar({
 			header: {
 				left: 'prev,next today',
@@ -14,8 +18,9 @@
 			defaultView: 'agendaWeek',
 			editable: false,
 			scrollTime: '08:00:00',
-			events: '{{ "json.html" | relative_url }}',
+			events: '{{ "json" | relative_url }}',
 			
+
 
 		    eventClick: function(calEvent, jsEvent, view) {
 
