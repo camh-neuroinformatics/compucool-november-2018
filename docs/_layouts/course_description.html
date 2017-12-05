@@ -1,5 +1,5 @@
 <li>
-	<div class="collapsible-header"><a name="{{ page.event-link }}">{{ page.title }} - {{ page.time }}, {{ page.room }}</a></div>
+	<div class="collapsible-header"><a name="{{ page.event-link }}">{{ page.title }} - {{ page.start | date: "%b %d - %H:%M:%S" }} - {{ page.end | date: "%H:%M:%S" }}, {{ page.room }}</a></div>
 	<div class="collapsible-body left-align">
 		<span>
 			<strong>Instructor:</strong> {{ page.instructor }} <br>

@@ -50,9 +50,7 @@ layout: default
 
 
 <ul class="collapsible" data-collapsible="accordion">
-	{% for course in site.courses_26th %}
-		{{ course }}
-	{% endfor %}
+	{{ site.courses | sort: "start"}}
 </ul>
 
 
