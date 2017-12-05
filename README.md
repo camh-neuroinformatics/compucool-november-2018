@@ -8,8 +8,8 @@
 ## Layouts:
 - put layout name in YAML front matter in order to use that layout
 - two layouts
-- default layout (used for most pages)
-- course description (used for course description collapsibles)
+  - default layout (used for most pages)
+  - course description (used for course description collapsibles)
 
 ## Includes:
 - includes used throughout to make code cleaner
