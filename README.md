@@ -23,6 +23,7 @@
 - numbering of files is important, and should follow chronological order (ascending order from earliest to last),  and match the json feed index numbering. This way collapsibles will be rendered in the correct order, and clicking on events in the calendar will expand the right collapsible.
 - numbering between days _should be continuous between folders_. For example, if you had a \_courses_27th and \_courses_28th, and the last file of \_courses_27th was 17-my-awesome-course.html, the first file of courses_28th should be 18-another-spectacular-course.html
 - add new collections (days courses are taught on) into \_config.yml
+- omit "helper" if there is no helper, and the page will automatically render without that field
 
 ## Calendar JSON feed:
 - json file, just follow the example

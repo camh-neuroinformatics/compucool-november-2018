@@ -1,6 +1,21 @@
+
 <script>
-	$(document).ready(function() {
-		
+
+
+	$(document).ready(function(){
+
+		// put all dates in an array so that indexing for collapsible works correctly
+		dates = new Array();
+		{% assign index = 0 %}
+		{% assign courses = site.courses | sort: "start" %}
+		{% for course in courses %}
+
+			dates[{{ index }}] = "{{ course.start }}";
+			{% assign index = index | plus: 1 %}
+
+		{% endfor %}
+
+
 		$('#calendar').fullCalendar({
 			header: {
 				left: 'prev,next today',
@@ -14,12 +29,18 @@
 			defaultView: 'agendaWeek',
 			editable: false,
 			scrollTime: '08:00:00',
-			events: '{{ "/json/calendar-feed.json" | relative_url }}',
+			events: '{{ "json" | relative_url }}',
 			
 
+			// loop through dates array and see if matches event's date
 		    eventClick: function(calEvent, jsEvent, view) {
-
-		        $('.collapsible').collapsible('open', calEvent.id);
+		    	var id = -1;
+		    	for (i = 0; i < dates.length; i++){
+		    		if(moment(calEvent.start).format().toString() == dates[i]) {
+		    			id = i;
+		    		}
+		    	}
+		        $('.collapsible').collapsible('open', id);
 		    }
 		});
 	});

@@ -10,5 +10,5 @@ description: "A 6 day long series of self-paced computing skills fundamentals wo
 root:        "http://hmofet.github.io/scwg"
 sources_link: "http://hmofet.github.io/scwg"
 collections: 
-    - courses_26th
+    - courses
     
