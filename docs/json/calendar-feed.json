@@ -29,67 +29,78 @@
 	},
 	{
 		"title": "Spreadsheets",
-		"url": "http://google.com/",
+		"url": "#spreadsheets",
+		"id": "4",
 		"start": "2017-09-27T09:00:00",
 		"end": "2017-09-27T11:00:00"
 	},
 	{
 		"title": "Labkey",
-		"url": "http://google.com/",
+		"id": "5",
+		"url": "#labkey",
 		"start": "2017-09-27T10:00:00",
 		"end": "2017-09-27T12:00:00"
 	},
 	{
 		"title": "Introduction to R",
-		"url": "http://google.com/",
+		"url": "#intro-to-r",
+		"id": "6",
 		"start": "2017-09-27T13:00:00",
 		"end": "2017-09-27T15:00:00"
 	},
 	{
-		"title": "Using git and GitLab to Manage Code, Experimnents, & Data",
-		"url": "http://google.com/",
+		"title": "Using git and GitLab to Manage Code, Experiments, & Data",
+		"url": "#using-git",
+		"id": "7",
 		"start": "2017-09-27T15:00:00",
 		"end": "2017-09-27T17:00:00"
 	},
 	{
 		"title": "Introduction to Neuroimaging Tools",
 		"url": "http://google.com/",
+		"id": "8",
 		"start": "2017-09-28T10:00:00",
 		"end": "2017-09-28T11:00:00"
 	},
 	{
 		"title": "Genetics on the SCC",
 		"url": "http://google.com/",
+		"id": "9",
 		"start": "2017-09-28T11:00:00",
 		"end": "2017-09-28T12:00:00"
 	},
 	{
 		"title": "Introduction to R",
 		"url": "http://google.com/",
+		"id": "10",
 		"start": "2017-09-28T13:00:00",
 		"end": "2017-09-28T15:00:00"
 	},
 	{
 		"title": "Data Visualization and Wrangling in R",
 		"url": "http://google.com/",
+		"id": "11",
 		"start": "2017-09-28T15:00:00",
 		"end": "2017-09-28T17:00:00"
 	},
 	{
 		"title": "Introduction to Python",
 		"url": "http://google.com/",
+		"id": "12",
 		"start": "2017-10-02T09:00:00",
 		"end": "2017-10-02T11:00:00"
 	},
 	{
 		"title": "Intro to MATLAB",
 		"url": "http://google.com/",
+		"id": "13",
 		"start": "2017-10-02T11:00:00",
 		"end": "2017-10-02T12:00:00"
 	},
 	{
 		"title": "Advanced MATLAB",
 		"url": "http://google.com/",
+		"id": "14",
 		"start": "2017-10-02T13:00:00",
 		"end": "2017-10-02T15:00:00"
 	}
