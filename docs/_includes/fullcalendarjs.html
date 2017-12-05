@@ -14,9 +14,13 @@
 			defaultView: 'agendaWeek',
 			editable: false,
 			scrollTime: '08:00:00',
-			events: '{{ "/json/calendar-feed.json" | relative_url }}'
+			events: '{{ "/json/calendar-feed.json" | relative_url }}',
 			
+
+		    eventClick: function(calEvent, jsEvent, view) {
+
+		        $('.collapsible').collapsible('open', calEvent.id);
+		    }
 		});
-		
 	});
 </script>
