@@ -1,21 +1,21 @@
 # scwg
 
-Tools and Frameworks:
+##Tools and Frameworks:##
 - Jekyll
 - MaterializeCSS
 - FullCalendarJS
 
-Layouts:
+##Layouts:##
 - put layout name in YAML front matter in order to use that layout
 - two layouts
 - default layout (used for most pages)
 - course description (used for course description collapsibles)
 
-Includes:
+##Includes:##
 - includes used throughout to make code cleaner
 - sometimes variables passed in to them
 
-Collections:
+##Collections:##
 - collections used to describe courses
 - one collection per day courses are taught
 - each folder for a collection must contain course files, named in the following pattern (0-indexed): 00-name-of-course.html
@@ -24,7 +24,8 @@ Collections:
 - numbering between days _should be continuous between folders_. For example, if you had a \_courses_27th and \_courses_28th, and the last file of \_courses_27th was 17-my-awesome-course.html, the first file of courses_28th should be 18-another-spectacular-course
 - add new collections (days courses are taught on) into \_config.yml
 
-Calendar feed:
+##Calendar feed:##
 - json file, just follow the example
 - id number is important: 0-indexed course IDs should be chronologically ordered, and match the order you want the courses to appear on the index page
+- unlike course file names, __do not__ use leading zero on index numbers
 - if id number is not correct or out of order, clicking on an event in the calendar will not expand the correct collapsible
