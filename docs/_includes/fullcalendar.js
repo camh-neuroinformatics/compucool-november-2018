@@ -30,7 +30,7 @@ $(document).ready(function(){
 		defaultView: 'agendaWeek',
 		editable: false,
 		scrollTime: '08:00:00', //preset the top of the viewable portion at 8am
-		events: '{{ "json" | relative_url }}', //f ile is simply called "json". Could have an extension, I suppose
+		events: '{{ "json" | permalink }}', //f ile is simply called "json". Could have an extension, I suppose
 		
 
 		// loop through dates array and see if matches event's date
