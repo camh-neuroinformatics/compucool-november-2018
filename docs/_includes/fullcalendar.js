@@ -23,7 +23,7 @@ $(document).ready(function(){
 			center: 'title',
 			right: 'agendaWeek,agendaDay'
 		},
-		defaultDate: '2017-09-26',
+		defaultDate: '2018-05-29',
 		minTime: '08:00:00', // these two lines fix the viewable area to business
 		maxTime: '17:30:00', // hours and make it not scrollable
 		contentHeight: 500,
