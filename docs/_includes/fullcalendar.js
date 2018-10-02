@@ -12,7 +12,7 @@ $(document).ready(function(){
 	{% for course in courses %} // loop through all courses
 
 		dates[{{ index }}] = "{{ course.start }}"; // item at this index number is set to course start time at this index number
-		{% assign index = index | plus: 1 %} // increment index (couldn't get increment operator to work, maybe someone can fix?)
+		{% assign index = index %} // increment index (couldn't get increment operator to work, maybe someone can fix?)
 
 	{% endfor %}
 
